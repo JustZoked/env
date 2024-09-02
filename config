@@ -33,25 +33,26 @@
 	},
 	"cpu": {
 		"interval":5,
-		"format":"CPU {usage:2}%"
+		"format":" {usage:2}%"
 	},
 	"battery":{
 		"states": {
-			"good": 95,
+			"good": 90,
 			"warning": 30,
-			"critial":15
+			"critical": 15
 		},
 		"format": "{icon} {capacity}%",
 		"format-icons": [
-			"C",
-			"W",
-			"G"
+			"",
+			"",
+			"",
+			"",
+			""		
 		]
 	},
-	"disk": {
-		"interval": 5,
-		"format": "Disk {percentage_used:2}%",
-		"path": "/"
+	"memory": {
+		"format": " {percentage}%",
+		"interval": 5
 	},
 	"custom/beba": {
 		"exec": "~/.config/waybar/scripts/beba.sh",
