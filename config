@@ -5,8 +5,7 @@
 	"position": "top",
 	
 	"modules-left": [
-		"pavucontrol",
-		"firefox"
+		"custom/beba"
 	],
 	"modules-center":[
 		"clock#2",
@@ -44,14 +43,20 @@
 		},
 		"format": "{icon} {capacity}%",
 		"format-icons": [
-			"G",
+			"C",
 			"W",
-			"C"
+			"G"
 		]
 	},
 	"disk": {
 		"interval": 5,
 		"format": "Disk {percentage_used:2}%",
 		"path": "/"
+	},
+	"custom/beba": {
+		"exec": "~/.config/waybar/scripts/beba.sh",
+		"interval": 60,
+		"tooltip": false
 	}
+	
 }
