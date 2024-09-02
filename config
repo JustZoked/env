@@ -1,0 +1,57 @@
+//WAAAAAAAAAAAAYBAAAAAAAAAAAAR
+
+{
+	"layer":"top",
+	"position": "top",
+	
+	"modules-left": [
+		"pavucontrol",
+		"firefox"
+	],
+	"modules-center":[
+		"clock#2",
+		"clock#1",
+		"clock#3"
+	],
+	"modules-right":[
+		"cpu",
+		"memory",
+		"battery"
+	],
+
+	
+	"clock#1": {
+		"format": "{:%A}",
+		"tooltip": false
+	},
+	"clock#2": {
+		"format": "{:%H:%M}",
+		"tooltip": false
+	},
+	"clock#3": {
+		"format": "{:%Y-%m-%d}",
+		"tooltip": false
+	},
+	"cpu": {
+		"interval":5,
+		"format":"CPU {usage:2}%"
+	},
+	"battery":{
+		"states": {
+			"good": 95,
+			"warning": 30,
+			"critial":15
+		},
+		"format": "{icon} {capacity}%",
+		"format-icons": [
+			"G",
+			"W",
+			"C"
+		]
+	},
+	"disk": {
+		"interval": 5,
+		"format": "Disk {percentage_used:2}%",
+		"path": "/"
+	}
+}
